@@ -1,7 +1,6 @@
-/* VARIABLES */
-:root{ /* all elements inside the document */
---primary: #ffc636;
---secondary: #0a0b5b;
+:root{
+  --primary: #FFC636;
+  --secondary: #0A0B5B;
 }
 
 /* RESET */
@@ -10,6 +9,7 @@ body,p,a,ul,li{
     padding: 0;
     text-decoration: none;
 }
+
 li{
     list-style-type: none;
 }
@@ -89,4 +89,18 @@ h4{
     body{
         font-size: 20px;
     }
+}
+
+/* GRID */
+
+.projects {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+}
+
+.projects a {
+    text-align: center;
+    background: gray;
+    padding: 20px;
 }
